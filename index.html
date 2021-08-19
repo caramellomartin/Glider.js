@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carousel / Slider con Glider.js</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<!-- ACA VA EL CDN PARA PODER USAR GLIDER!!! el css va antes de los estilos.css-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<main class="contenido-principal">
+			<img src="img/DrMundo_0.jpg" alt="Dr Mundo OP" class="contenido-principal__imagen">
+			<div class="contenido-principal__contenedor">
+				<h1 class="contenido-principal__titulo">Dr Mundo</h1>
+				<p class="contenido-principal__resumen">
+					Roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto roto. Pero lo kiero :) 
+				</p>
+				<p class="contenido-principal__resumen">
+					Te la re da, pero lo sigo queriendo.
+				</p>
+			</div>
+		</main>
+
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<!-- este es el icono que usamos de font awesome-->
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="img/Gnar_0.jpg" alt="Gnar god">
+						<p>Gnar</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/Jhin_0.jpg" alt="Jhin god x2">
+						<p>Jhin</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/KogMaw_0.jpg" alt="Kogmaw god al cubo">
+						<p>Kog'Maw</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/Rumble_0.jpg" alt="Rumble god elevado a la infinito.">
+						<p>Rumble</p>
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="img/Tryndamere_0.jpg" alt="Trynda en el cora.">
+						<p>Tryndamere</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/Varus_0.jpg" alt="Messirve Varus full atck speed.">
+						<p>Varus</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/Veigar_0.jpg" alt="Veigar es mi padre.">
+						<p>Veigar</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/Yorick_0.jpg" alt="Si antes te queria, ahora te quiero mas.">
+						<p>Yorick</p>
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			<!-- Tablist, lista de elementos de tabulacion.-->
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+	</div>
+
+	<!-- ACA VA EL CDN PARA PODER USAR GLIDER!!! Al final del html-->
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
